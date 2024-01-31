@@ -24,10 +24,10 @@ jobs:
           dotnet-version: 8.0.101
 
       - name: Restore dependencies
-        run: dotnet restore ./ClassLibraryProject/YourProjectName.csproj # Replace YourProjectName with the actual name
+        run: dotnet restore ./ClassLibraryProjects/YourProjectName.csproj # Replace YourProjectName with the actual name
 
       - name: Build
-        run: dotnet build ./ClassLibraryProject/YourProjectName.csproj # Replace YourProjectName with the actual name
+        run: dotnet build ./ClassLibraryProjects/YourProjectName.csproj # Replace YourProjectName with the actual name
 
       - name: Test
-        run: dotnet test ./ClassLibraryProject/YourTestsFolder/YourTestProjectName.csproj # Replace YourTestsFolder and YourTestProjectName with the actual names
+        run: dotnet test ./ClassLibraryProjects/YourTestsFolder/YourTestProjectName.csproj # Replace YourTestsFolder and YourTestProjectName with the actual names
